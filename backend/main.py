@@ -17,6 +17,7 @@ app.include_router(routers.parameter_router, prefix="/api/parameters", tags=["pa
 app.include_router(routers.material_router, prefix="/api/materials", tags=["materials"])
 app.include_router(routers.printer_router, prefix="/api/printers", tags=["printers"])
 app.include_router(routers.matching_router, prefix="/api/matching", tags=["matching"])
+app.include_router(routers.auth_router, prefix="/api/auth", tags=["authentication"])
 
 @app.get("/")
 def read_root():
